@@ -1,1 +1,18 @@
 # ShortQuestions
+Exec
+
+1.  execWhen referring to a command line such as Linux or Unix, exec is a BOURNE and POSIX shell command that replaces the current shell process with the command specified after exec. This command does not create a new PID. For example, if you were to run exec <command>, the shell would be replaced by that command. When that command is exited, the shell will exit.
+
+set redirections for the program to execute or for the current shell
+
+The >& outputfile operator is shorthand for > outputfile 2>&1.
+
+tee is normally used to split the output of a program so that it can be both displayed and saved in a file. The command can be used to capture intermediate output before the data is altered by another command or program. The tee command reads standard input, then writes its content to standard output. It simultaneously copies the result into the specified file(s) or variables. The syntax differs depending on the command's implementation:
+
+Find mtime , ctime , atime 
+find PATH -iname "$PATTERN"
+Find Last 50-100 Days Modified Files
+To find all the files which are modified more than 50 days back and less than 100 days.
+# find / -mtime +50 –mtime -100
+
+
