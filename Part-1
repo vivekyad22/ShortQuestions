@@ -14,5 +14,7 @@ find PATH -iname "$PATTERN"
 Find Last 50-100 Days Modified Files
 To find all the files which are modified more than 50 days back and less than 100 days.
 # find / -mtime +50 –mtime -100
-
+Find Modified Files in Last 1 Hour
+To find all the files which are modified in last 1 hour.
+# find / -mmin -60
 
