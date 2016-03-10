@@ -33,6 +33,45 @@ InnoDB designed for maximum performance when processing high volume of data
 InnoDB support foreign keys hence we call MySQL with InnoDB is RDBMS
 InnoDB supports transaction. You can commit and rollback with InnoDB
 
+NAGIOS
+----------------------------------------------------
+Install nagios
+Install nagios plugins
+INstall NRPE
+
+Nagios configuration file( Define remote servers,) 
+/usr/local/nagios/etc/nagios.cfg 
+
+Nagios remote server template file, defining services
+/usr/local/nagios/etc/servers/yourhost.cfg
+
+Nagios Contacts file 
+/usr/local/nagios/etc/objects/contacts.cfg
+
+Nagios command file 
+/usr/local/nagios/etc/objects/commands.cfg
+
+Remote host nrpe file
+/etc/nagios/nrpe.cfg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
