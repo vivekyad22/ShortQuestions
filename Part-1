@@ -97,6 +97,20 @@ You can use lsof or fuser to indentify which is using this directory, something 
 # lsof +D /var/www/html
 
 
+Now, what does this have to do with static and dynamic? Well, with a static library, the entire library is copied from /lib (or wherever it normally resides) inside your program, and the entire executable is spat out, with your code and the library code. With a dynamic library, however, the library is NOT copied. A reference to the library is included in your executable, but the actual library code is not. When you call a function in that library, the C runtime will see if the library you need exists on the current system. If it does, and it's not already in RAM, it will load it up and allow you to use anything defined in it.
+
+Dynamic libraries have several benefits:
+Smaller executable sizes
+Less duplication - multiple programs that depend on the same library only need one copy for the whole system
+Less RAM usage - the same library can be shared among different programs running at the same time
+
+
+However, it also has some issues:
+It is slightly slower, as all the linking must be done at runtime instead of compile time.
+It must be able to find the library at runtime if it exists on the system. If it doesn't exist or can't be found, the program can't run.
+
+
+The last point is the source of all of those "foo.dll could not be found" errors you used to get on Windows. .dll stands for "dynamically linking library".
 
 
 
