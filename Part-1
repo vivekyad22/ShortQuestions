@@ -1,7 +1,8 @@
 # ShortQuestions
 Exec
 
-Request for pick by channel with reference number 54197 has been submitted successfully. We'll call you within 24hrs
+Request for pick by channel with reference number 54197 has been submitted successfully. We'll call you within 24hrs180
+18002744744
 
 
 1.  execWhen referring to a command line such as Linux or Unix, exec is a BOURNE and POSIX shell command that replaces the current shell process with the command specified after exec. This command does not create a new PID. For example, if you were to run exec <command>, the shell would be replaced by that command. When that command is exited, the shell will exit.
