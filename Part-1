@@ -116,6 +116,8 @@ The last point is the source of all of those "foo.dll could not be found" errors
 
 
 
+Soft links are link to the file name and can reside on different filesytem as well; however hard links are link to the inode of the file and has to be on the same filesytem as that of the file. Deleting the orginal file makes the soft link inactive (broken link) but does not affect the hard link (Hard link will still access a copy of the file)
+
 
 
 
